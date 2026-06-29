@@ -1,0 +1,20 @@
+project_id                  = "personal-434212"
+region                      = "us-east1"
+github_owner                = "kabala"
+github_repository_name      = "AlloyDbCrudApi"
+github_repository_full_name = "kabala/AlloyDbCrudApi"
+
+cloud_run_allow_unauthenticated = true
+cors_allowed_origins = [
+  # "https://your-frontend-url.run.app",
+]
+
+cloud_sql_instance_name     = "crud-postgres"
+cloud_sql_database_version  = "POSTGRES_16"
+cloud_sql_tier              = "db-f1-micro"
+cloud_sql_disk_type         = "PD_HDD"
+cloud_sql_disk_size_gb      = 10
+cloud_sql_backups_enabled   = false
+cloud_sql_database_name     = "cruddb"
+cloud_sql_user              = "app_user"
+connection_secret_version   = 6
